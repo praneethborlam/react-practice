@@ -1,0 +1,3 @@
+Use PascalCase for component names
+One component per file
+Export default at the bottom
