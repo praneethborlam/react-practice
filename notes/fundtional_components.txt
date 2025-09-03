@@ -1,3 +1,8 @@
 Use PascalCase for component names
 One component per file
 Export default at the bottom
+---
+Break UI into small, focused components
+Use props to pass data down
+Components should do one thing well
+Use destructuring for props

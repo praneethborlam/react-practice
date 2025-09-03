@@ -1,12 +1,22 @@
 import React from 'react';
+import Header from './components/Header';
+import UserCard from './components/UserCard';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Functional Components</h1>
-      </header>
+       <Header 
+        title="Funtional Components" 
+        subtitle="Architecture Patterns"
+      />
+      <main>
+        <UserCard 
+          name="John Doe"
+          email="john@example.com"
+          role="Developer"
+        />
+      </main>
     </div>
   );
 }
