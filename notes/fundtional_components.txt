@@ -6,3 +6,8 @@ Break UI into small, focused components
 Use props to pass data down
 Components should do one thing well
 Use destructuring for props
+---
+useEffect for side effects (timers, API calls, subscriptions)
+Always clean up in useEffect return function
+React 18's Strict Mode helps catch missing cleanup
+Empty dependency array [] means "run once on mount"

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/common/Header';
 import UserCard from './components/user/UserCard';
+import Clock from './components/common/Clock';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         title="Funtional Components" 
         subtitle="Architecture Patterns"
       />
+       <Clock />
       <main>
         <UserCard 
           name="John Doe"
