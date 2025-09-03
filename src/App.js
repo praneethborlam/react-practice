@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
-import UserCard from './components/UserCard';
+import Header from './components/common/Header';
+import UserCard from './components/user/UserCard';
 import './App.css';
 
 function App() {

@@ -1,4 +1,5 @@
 import React from 'react';
+import './UserCard.css';
 
 function UserCard({ name, email, role }) {
   return (
