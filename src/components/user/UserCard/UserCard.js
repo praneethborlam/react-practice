@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import useLocalStorage from '../../../hooks/useLocalStorage';
 import './UserCard.css';
 
 function UserCard({ name, email, role }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [likes, setLikes] = useState(0);
+  // Using our custom hook to persist likes in localStorage
+  const [likes, setLikes] = useLocalStorage(`likes-${name}`, 0);
 
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
