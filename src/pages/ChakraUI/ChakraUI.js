@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProfileCard from '../../components/custom/ProfileCard';
 import {
   Box,
   Heading,
@@ -35,6 +36,30 @@ function ChakraUI() {
           >
             Chakra UI
           </Heading>
+        </Box>
+        
+        <Box borderWidth="1px" borderRadius="lg" p={6} bg="white" shadow="md">
+          <Heading size="lg" mb={6}>Users</Heading>
+
+          <HStack spacing={4} wrap="wrap" justify="center">
+            <ProfileCard 
+              name="Praneeth"
+              role="ROR" 
+              email="bp@test.com"
+              isOnline={true}
+              onConnect={() => alert('Hello!')}
+            />
+            
+            <ProfileCard 
+              name="Michael"
+              role="Manager"
+              email="ms@test.com"
+              isOnline={true}
+              bg="blue.50"  // Custom background
+              borderColor="blue.200" 
+              onConnect={() => alert('Hey!')}
+            />
+          </HStack>
         </Box>
 
         {/* Style Props */}
