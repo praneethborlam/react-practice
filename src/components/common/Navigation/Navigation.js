@@ -23,6 +23,13 @@ function Navigation() {
         >
           Chakra UI
         </Button>
+        <Button
+          colorScheme={location.pathname === '/design-tokens' ? 'blue' : 'white'}
+          variant={location.pathname === '/design-tokens' ? 'solid' : 'ghost'}
+          onClick={() => navigate('/design-tokens')}
+        >
+          Design Tokens
+        </Button>
       </HStack>
     </Box>
   );

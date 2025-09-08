@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Box } from '@chakra-ui/react';
 import Navigation from './components/common/Navigation';
 import ChakraUI from './pages/ChakraUI';
+import DesignTokens from './pages/DesignTokens';
 import './App.css';
 
 function Dashboard() {
@@ -34,6 +35,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/chakra-ui" element={<ChakraUI />} />
+        <Route path="/design-tokens" element={<DesignTokens />} />
       </Routes>
     </Box>
   );
